@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">@import url("styles/default.css");</style>
+<script type="text/javascript">
+
+function moveMario(){
+        document.getElementById('jump_div').className='jump_div';
+        document.getElementById('stand_mario').className='hide_mario';
+        document.getElementById('jump_mario').className='show_mario';
+}
+
+function test(){
+var mario = document.getElementById('stand_mario');
+var heightMult = mario.width / mario.height;
+var widthMult = mario.height / mario.width;
+var winHeight = window.innerHeight;
+var winWidth = window.innerWidth;
+//alert(winHeight + ' ' + winWidth);
+var marioHeight = Math.floor(winHeight * .12);
+var marioWidth = Math.floor(winWidth * .04);
+var marioTop = Math.floor(winHeight * .72);
+//var marioTop = Math.floor(winHeight * (.72 * ( ( winWidth/winHeight) / 1.93)));
+var marioLeft = Math.floor(winWidth * .45);
+var standDiv = document.getElementById('stand_div');
+        standDiv.style.height = marioHeight + 'px';
+        standDiv.style.top = marioTop + 'px';
+        standDiv.style.left = marioLeft + 'px';
+        mario.style.width = marioWidth + 'px';
+        mario.style.height = widthMult * marioWidth + 'px';
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="test();" value="click me" />
+<input type="button" onclick="moveMario();" value="click me too!" />
+<div class="mario"><img src="images/mario.png" /></div>
+<div id="stand_div" class="mario_sprite"><img id="stand_mario" class="show_mario" src="images/standing_mario.png" /></div>
+<div id="jump_div" class="mario_sprite"><img id="jump_mario" class="hide_mario" src="images/jumping_mario.png" /></div>
+<h1 id="count_down" class="hidden">5</h1>
+</body>
+</html>
+ 
+

@@ -1,0 +1,108 @@
+.hidden{
+display:none;
+}
+
+html{
+	background: url(../images/bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.mario{
+
+}
+
+.mario_sprite{
+	position:fixed; 
+	top:71%; 
+	left:45%;
+	height:12%;
+}
+
+.show_mario{
+	height:100%;
+}
+
+.hide_mario{
+	height:100%;
+	display:none;
+}
+
+.countdown{
+	right:50%;
+	top:25%;
+	position:fixed;
+}
+
+.jump_name{
+        position:fixed;
+        top:255px;
+        left:575px;
+        height:12%;
+        animation:mysecond 2s;
+        -moz-animation:mysecond 2s; /* Firefox */
+        -webkit-animation:mysecond 2s; /* Safari and Chrome */
+        -o-animation:mysecond 2s; /* Opera */
+}
+
+@keyframes mysecond
+{
+        0%   {  left:580px; top:450px;}
+        100% {  left:600px; top:345px;}
+}
+
+@-moz-keyframes mysecond /* Firefox */
+{
+        0%   {  left:575px; top:275px;}
+        100% {  left:575px; top:255px;}
+}
+
+@-webkit-keyframes mysecond /* Safari and Chrome */
+{
+        0%   {  left:580px; top:450px;}
+        100% {  left:600px; top:345px;}
+}
+
+@-o-keyframes mysecond /* Opera */
+{
+        0%   {  left:580px; top:450px;}
+        100% {  left:600px; top:345px;}
+}
+
+.jump_div
+{
+        position:fixed;
+        top:345px;
+        left:600px;
+        height:12%;
+	animation:myfirst 2s;
+	-moz-animation:myfirst 2s; /* Firefox */
+	-webkit-animation:myfirst 2s; /* Safari and Chrome */
+	-o-animation:myfirst 2s; /* Opera */
+}
+
+@keyframes myfirst
+{
+	0%   {  left:580px; top:450px;}
+	100% {  left:600px; top:345px;}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+	0%   {  left:580px; top:450px;}
+	100% {  left:600px; top:345px;}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+        0%   {  left:580px; top:450px;}
+        100% {  left:600px; top:345px;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+        0%   {  left:580px; top:450px;}
+        100% {  left:600px; top:345px;}
+}
