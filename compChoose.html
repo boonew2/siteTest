@@ -4,6 +4,8 @@
 <style type="text/css">@import url("styles/default.css");</style>
 <script type="text/javascript">
 
+window.onload = test;
+
 function moveMario(){
         document.getElementById('jump_div').className='jump_div';
         document.getElementById('stand_mario').className='hide_mario';
@@ -32,7 +34,6 @@ var standDiv = document.getElementById('stand_div');
 </script>
 </head>
 <body>
-<input type="button" onclick="test();" value="click me" />
 <input type="button" onclick="moveMario();" value="click me too!" />
 <div class="mario"><img src="images/mario.png" /></div>
 <div id="stand_div" class="mario_sprite"><img id="stand_mario" class="show_mario" src="images/standing_mario.png" /></div>
